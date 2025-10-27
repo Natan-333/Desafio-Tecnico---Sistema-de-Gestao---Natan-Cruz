@@ -1,0 +1,29 @@
+<div class="message">${message}</div>
+<template>
+  <!--<require from="./styles.css"></require>-->
+  <h2>Users CRUD — Aurelia 1 (TypeScript)</h2>
+
+  <form submit.trigger="createUser()">
+    <input placeholder="Nome" value.bind="newUser.nome" required />
+    <input placeholder="Email" value.bind="newUser.email" required />
+    <input placeholder="Password" type="password" value.bind="newUser.password" required />
+    <button type="button" click.delegate="createUser()">Create</button>
+  </form>
+
+  <hr/>
+
+  <table>
+    <thead><tr><th>ID</th><th>Nome</th><th>Email</th><th>Actions</th></tr></thead>
+    <tbody>
+      <tr repeat.for="u of users">
+        <td>${u.id}</td>
+        <td><input value.bind="u.nome" /></td>
+        <td><input value.bind="u.email" /></td>
+        <td>
+          <button click.delegate="updateUser(u)">Save</button>
+          <button click.delegate="deleteUser(u.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</template>
