@@ -5,7 +5,7 @@ Backend
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Dotnet](https://dotnet.microsoft.com/)
-
+**.NET 8.0 SDK** 
 ---
 
 
@@ -62,5 +62,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Pronto !!!
 O app estará disponível no seu browser pelo endereço http://localhost:9000.
 
-O arquivo Json estará disponível no seu browser pelo endereço http://localhost:----.
+- **API Docs:** https://localhost:7234/swagger/
 
